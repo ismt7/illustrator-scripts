@@ -1,0 +1,15 @@
+{
+  "name": "illustrator-scripts",
+  "version": "1.0.0",
+  "description": "Adobe Illustrator scripts",
+  "scripts": {
+    "lint": "eslint \"scripts/**/*.jsx\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "8.57.0"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0"
+  }
+}
