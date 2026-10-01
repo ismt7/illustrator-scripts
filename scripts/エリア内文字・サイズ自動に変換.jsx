@@ -1,6 +1,6 @@
 (function() {
     if (app.documents.length === 0) return;
-    
+
     var doc = app.activeDocument;
     var sel = doc.selection;
 
@@ -13,7 +13,7 @@
 
     // 現在の「自動サイズ調整」のIllustrator環境設定を一時保存
     var originalAutoSize = app.preferences.getBooleanPreference("text/autoSizing");
-    
+
     // 新しくエリア文字に変換する際、強制的に「自動サイズ調整（下枠ダブルクリック状態）」をONにする
     app.preferences.setBooleanPreference("text/autoSizing", true);
 
@@ -23,11 +23,11 @@
 
         // 選択されたオブジェクトが「ポイント文字」の場合のみ処理を実行
         if (item.typename === "TextFrame" && item.kind === TextType.POINTTEXT) {
-            
+
             // エリア内文字に変換（このとき自動サイズ調整が自動で付与されます）
             item.convertPointObjectToAreaObject();
             count++;
-            
+
         }
     }
 
