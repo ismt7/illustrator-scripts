@@ -1,0 +1,22 @@
+{
+    "env": {
+        "es6": false
+    },
+    "globals": {
+        "TextType": "readonly",
+        "alert": "readonly",
+        "app": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "rules": {
+        "curly": ["error", "multi-line"],
+        "indent": ["error", 4],
+        "no-undef": "error",
+        "no-unused-vars": "error",
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-trailing-spaces": "error"
+    }
+}
