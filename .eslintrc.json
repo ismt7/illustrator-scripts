@@ -4,6 +4,7 @@
     },
     "globals": {
         "TextType": "readonly",
+        "Window": "readonly",
         "alert": "readonly",
         "app": "readonly",
         "prompt": "readonly"
