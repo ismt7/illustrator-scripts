@@ -3,6 +3,7 @@
         "es6": false
     },
     "globals": {
+        "RulerUnits": "readonly",
         "TextType": "readonly",
         "Window": "readonly",
         "alert": "readonly",
