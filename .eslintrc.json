@@ -5,7 +5,8 @@
     "globals": {
         "TextType": "readonly",
         "alert": "readonly",
-        "app": "readonly"
+        "app": "readonly",
+        "prompt": "readonly"
     },
     "parserOptions": {
         "ecmaVersion": 5
