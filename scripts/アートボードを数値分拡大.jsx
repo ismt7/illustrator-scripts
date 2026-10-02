@@ -9,37 +9,37 @@
     var pointsPerUnit;
 
     switch (doc.rulerUnits) {
-        case RulerUnits.Inches:
-            unitName = "インチ";
-            pointsPerUnit = 72;
-            break;
-        case RulerUnits.Centimeters:
-            unitName = "センチメートル";
-            pointsPerUnit = 72 / 2.54;
-            break;
-        case RulerUnits.Millimeters:
-            unitName = "ミリメートル";
-            pointsPerUnit = 72 / 25.4;
-            break;
-        case RulerUnits.Picas:
-            unitName = "パイカ";
-            pointsPerUnit = 12;
-            break;
-        case RulerUnits.Qs:
-            unitName = "Q";
-            pointsPerUnit = 72 / (25.4 * 4);
-            break;
-        case RulerUnits.Pixels:
-            unitName = "ピクセル";
-            pointsPerUnit = 1;
-            break;
-        case RulerUnits.Points:
-            unitName = "ポイント";
-            pointsPerUnit = 1;
-            break;
-        default:
-            alert("ドキュメントの単位を判別できません。");
-            return;
+    case RulerUnits.Inches:
+        unitName = "インチ";
+        pointsPerUnit = 72;
+        break;
+    case RulerUnits.Centimeters:
+        unitName = "センチメートル";
+        pointsPerUnit = 72 / 2.54;
+        break;
+    case RulerUnits.Millimeters:
+        unitName = "ミリメートル";
+        pointsPerUnit = 72 / 25.4;
+        break;
+    case RulerUnits.Picas:
+        unitName = "パイカ";
+        pointsPerUnit = 12;
+        break;
+    case RulerUnits.Qs:
+        unitName = "Q";
+        pointsPerUnit = 72 / (25.4 * 4);
+        break;
+    case RulerUnits.Pixels:
+        unitName = "ピクセル";
+        pointsPerUnit = 1;
+        break;
+    case RulerUnits.Points:
+        unitName = "ポイント";
+        pointsPerUnit = 1;
+        break;
+    default:
+        alert("ドキュメントの単位を判別できません。");
+        return;
     }
 
     var input = prompt("アートボードの各辺から拡大する数値を入力してください（" + unitName + "）", "10");
